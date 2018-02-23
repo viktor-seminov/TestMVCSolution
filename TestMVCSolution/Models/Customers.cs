@@ -6,12 +6,9 @@ using System.Web.Mvc;
 
 namespace TestMVCSolution.Models
 {
-    public class CustomersController : Controller
+    public class Customers
     {
-        // GET: Customers
-        public ActionResult Index()
-        {
-            return View();
-        }
+       public Int32 Id { get; set; }
+       public String CustomerName { get; set; }
     }
 }
