@@ -7,13 +7,13 @@ namespace TestMVCSolution.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class check : IMigrationMetadata
+    public sealed partial class addingvalues : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(check));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addingvalues));
         
         string IMigrationMetadata.Id
         {
-            get { return "201802261404006_check"; }
+            get { return "201802261615380_adding-values"; }
         }
         
         string IMigrationMetadata.Source

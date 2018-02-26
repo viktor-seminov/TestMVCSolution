@@ -68,6 +68,8 @@ namespace TestMVCSolution.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
+                        DrivingLicense = c.String(nullable: false, maxLength: 255),
+                        Phone = c.String(nullable: false, maxLength: 50),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),

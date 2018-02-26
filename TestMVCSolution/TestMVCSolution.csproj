@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -159,23 +160,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802261353486_initial.cs" />
-    <Compile Include="Migrations\201802261353486_initial.Designer.cs">
-      <DependentUpon>201802261353486_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201802261614469_initial.cs" />
+    <Compile Include="Migrations\201802261614469_initial.Designer.cs">
+      <DependentUpon>201802261614469_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802261355334_insertInfo.cs" />
-    <Compile Include="Migrations\201802261355334_insertInfo.Designer.cs">
-      <DependentUpon>201802261355334_insertInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802261404006_check.cs" />
-    <Compile Include="Migrations\201802261404006_check.Designer.cs">
-      <DependentUpon>201802261404006_check.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802261405533_check2.cs" />
-    <Compile Include="Migrations\201802261405533_check2.Designer.cs">
-      <DependentUpon>201802261405533_check2.cs</DependentUpon>
+    <Compile Include="Migrations\201802261615380_adding-values.cs" />
+    <Compile Include="Migrations\201802261615380_adding-values.Designer.cs">
+      <DependentUpon>201802261615380_adding-values.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembeshipType.cs" />
@@ -244,17 +238,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802261353486_initial.resx">
-      <DependentUpon>201802261353486_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802261614469_initial.resx">
+      <DependentUpon>201802261614469_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802261355334_insertInfo.resx">
-      <DependentUpon>201802261355334_insertInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802261404006_check.resx">
-      <DependentUpon>201802261404006_check.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802261405533_check2.resx">
-      <DependentUpon>201802261405533_check2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802261615380_adding-values.resx">
+      <DependentUpon>201802261615380_adding-values.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
