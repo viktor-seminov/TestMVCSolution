@@ -8,6 +8,8 @@ namespace TestMVCSolution.Models
         public DbSet<Customers> Customers { get; set; }
         public DbSet<Movies> Movies { get; set; }
         public DbSet<MembeshipType> MembershipTypes { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

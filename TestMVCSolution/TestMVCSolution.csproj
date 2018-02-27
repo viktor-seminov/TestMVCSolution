@@ -168,13 +168,36 @@
     <Compile Include="Migrations\201802261615380_adding-values.Designer.cs">
       <DependentUpon>201802261615380_adding-values.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802270858146_memberName.cs" />
+    <Compile Include="Migrations\201802270858146_memberName.Designer.cs">
+      <DependentUpon>201802270858146_memberName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802270908539_addingBirthdate.cs" />
+    <Compile Include="Migrations\201802270908539_addingBirthdate.Designer.cs">
+      <DependentUpon>201802270908539_addingBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802270914407_fixNull.cs" />
+    <Compile Include="Migrations\201802270914407_fixNull.Designer.cs">
+      <DependentUpon>201802270914407_fixNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802270938216_addingGenre.cs" />
+    <Compile Include="Migrations\201802270938216_addingGenre.Designer.cs">
+      <DependentUpon>201802270938216_addingGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802270939327_populateGenres.cs" />
+    <Compile Include="Migrations\201802270939327_populateGenres.Designer.cs">
+      <DependentUpon>201802270939327_populateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembeshipType.cs" />
     <Compile Include="Models\Movies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\MovieGenreViewModel.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +241,9 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +269,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802261615380_adding-values.resx">
       <DependentUpon>201802261615380_adding-values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802270858146_memberName.resx">
+      <DependentUpon>201802270858146_memberName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802270908539_addingBirthdate.resx">
+      <DependentUpon>201802270908539_addingBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802270914407_fixNull.resx">
+      <DependentUpon>201802270914407_fixNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802270938216_addingGenre.resx">
+      <DependentUpon>201802270938216_addingGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802270939327_populateGenres.resx">
+      <DependentUpon>201802270939327_populateGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

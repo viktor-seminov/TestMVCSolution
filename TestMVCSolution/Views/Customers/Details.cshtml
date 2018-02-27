@@ -6,3 +6,7 @@
 }
 
 <h2>@Model.CustomerName</h2>
+@if (Model.BirthDate.HasValue)
+{
+    <li>@Model.BirthDate.Value.ToShortDateString()</li>
+}
